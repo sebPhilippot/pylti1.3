@@ -274,7 +274,8 @@ exclude-too-few-public-methods=
 ignored-parents=
 
 # Maximum number of arguments for function / method.
-max-args=5
+max-args=8
+max-positional-arguments=8
 
 # Maximum number of attributes for a class (see R0902).
 max-attributes=7
@@ -307,8 +308,8 @@ min-public-methods=2
 [EXCEPTIONS]
 
 # Exceptions that will emit a warning when caught.
-overgeneral-exceptions=BaseException,
-                       Exception
+overgeneral-exceptions=builtins.BaseException,
+                       builtins.Exception
 
 
 [FORMAT]
@@ -428,6 +429,7 @@ disable=bad-inline-option,
         use-symbolic-message-instead,
         useless-option-value,
         useless-suppression,
+         broad-exception-raised,
 
 
 # Enable the message, report, category or checker with the given id(s). You can
